@@ -49,9 +49,10 @@ public class CrawlerInternalLinksProcessor extends AbstractCrawlerProcessor{
 	public List<CrawlerVO> process(String url) throws CrawlerException {
     
 		validateURL(url);
-
+        //Clear from the previous run.
 		this.visited.clear();
 		this.relaitons.clear();
+		this.staticAssets.clear();
 
 		crawlerExecutor(url);
 		return buildResponse(relaitons, staticAssets);
