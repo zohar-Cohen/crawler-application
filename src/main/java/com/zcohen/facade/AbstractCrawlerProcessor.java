@@ -22,7 +22,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * An abstract crawler builder implementation.
  * @author zoharC
- * Date: 02-14-2021
+ * Date: 03-24-2021
  *
  */
 @Slf4j
@@ -33,6 +33,7 @@ public abstract class AbstractCrawlerProcessor {
 	protected String inputURL;
 
 	/**
+	 * The main processor method, invokes depended steps.
 	 * @param url - input parent URL to perform the scan.
 	 * @return list for site relation links and assets
 	 * @throws CrawlerException

@@ -19,7 +19,6 @@ import org.springframework.web.client.RestTemplate;
 import com.zcohen.exception.CrawlerException;
 import com.zcohen.model.CrawlerVO;
 
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -32,8 +31,8 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class CrawlerInternalLinksProcessor extends AbstractCrawlerProcessor{
 
-	private @Getter Set<String> visited;
-	private @Getter Map<String,Set<String>> relaitons;
+	private Set<String> visited;
+	private Map<String,Set<String>> relaitons;
 	private Map<String, Set<String>> staticAssets;
 	private final int timeout;
 

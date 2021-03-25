@@ -22,8 +22,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * A controller end point implementation for the crawler application
+ * A controller endpoint implementation for the crawler application
  * @author zoharC
+ * Date: 03-24-2021
  *
  */
 
