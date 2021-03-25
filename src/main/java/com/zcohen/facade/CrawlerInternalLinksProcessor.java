@@ -84,11 +84,11 @@ public class CrawlerInternalLinksProcessor extends AbstractCrawlerProcessor{
 					.collect(Collectors.toSet()));
 			
 			relaitons.put(url, links);
-			log.info("----- Link {} hass been processed successfully, found {} refreance unique links to index-----", url, links.size());
+			log.info("----- Link {} has been processed successfully, found {} refreance unique links to index-----", url, links.size());
 			links.stream().parallel().forEach(this::crawlerExecutor);
+			
 		} catch (IOException e) {
-			log.error("An error occured during connect to: {}, error: {}", url, e.getMessage());
-
+			log.error("An error occurred once establishing connection to: {}, error: {}", url, e.getMessage());
 		}
 	}
 

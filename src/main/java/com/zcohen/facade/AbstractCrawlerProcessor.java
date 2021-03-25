@@ -44,7 +44,7 @@ public abstract class AbstractCrawlerProcessor {
 	 * A recursive method traverse over the URL link and the depended URLs and index the relations.
 	 * The traverse ends once all the depends links are visited.
 	 * 
-	 * @param url - an URL input for HTML object scan.
+	 * @param url - an URL input for the HTML object scan.
 	 */
 	protected abstract void crawlerExecutor(String url);
 	
