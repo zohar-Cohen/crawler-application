@@ -6,4 +6,5 @@ Once the application is up and running, it listens to the default 8080 port, and
 
 Example: 
 The below end-point will scan www.sedna.com, and will provide all dependent pages and links with the associated assets.
+
 curl --location --request GET 'http://localhost:8080/web-crawler/v1/scan?url=https://www.sedna.com' --header 'activity-id: 1234'
